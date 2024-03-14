@@ -1,28 +1,59 @@
-# Create T3 App
+## Emoji Speak: Express Yourself with Emojis and Text (Next.js, tRPC)
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+**Unleash the power of emoji expression!** Emoji Speak is a dynamic social media app that lets you combine emojis and text for a unique way to connect. Built with cutting-edge technologies like **Next.js** and **tRPC**, it empowers user expression and fosters a future-proof foundation for real-time interaction.
 
-## What's next? How do I make an app with this?
+### Tech Stack:
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- **Frontend:** Next.js, React 18, Clerk, tRPC, TailwindCSS
+- **Backend:** Prisma
+- **Authentication:** Clerk, NextAuth
+- **Additional Libraries:** Upstash, SuperJSON, Dayjs, react-hot-toast (for specific functionalities)
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+**Key Features:**
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1. **Secure & Expressive:** Create an account with Clerk and express yourself freely with emojis and text.
+2. **Future-Ready Communication:** The foundation is laid for real-time features using tRPC, fostering a dynamic and interactive community.
+3. **Effortless Data Management:** Store and retrieve data efficiently with Prisma (ORM).
+4. **Fast & Efficient:** Enjoy optimized image loading with Next/Image and fast data transfer with SuperJSON.
+5. **Create & Share:** Craft and connect posts to your profile, fostering self-expression. (PostView component with relative timestamps using Dayjs)
+6. **Seamless User Experience:** Navigate effortlessly with well-defined routing for profiles and posts (powered by tRPC's createProxySSGHelpers).
+7. **Secure & Reliable:** Rest assured with secure authentication practices and user-friendly error handling using Zod and react-hot-toast.
 
-## Learn More
+**My Expertise:**
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- **Full-Stack Development:** Adept at building both front-end and back-end functionalities.
+- **Tech-Savvy:** Eager to learn and implement the latest advancements in web development.
+- **User-Centric Design:** Prioritize intuitive and visually appealing user interfaces.
+- **Security Champion:** Prioritize secure user authentication and data integrity.
+### Cloning the repository
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+```shell
+git clone https://github.com/AldinRekic/emoji-speak.git
+```
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+### Install packages
 
-## How do I deploy this?
+```shell
+npm i
+```
+### Setup .env file
+```js
+DATABASE_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=p
+CLERK_SECRET_KEY=
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+UPSTASH_REDIS_REST_URL=
+UPSTASH_REDIS_REST_TOKEN=
+```
+### Start the app
+
+```shell
+npm run dev
+```
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
